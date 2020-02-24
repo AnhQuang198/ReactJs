@@ -6,6 +6,7 @@ class Hello extends Component {
     return (
       <div onClick={onClick} className={className}>
         <h1>{this.props.item.title}</h1>
+        <h2>Hello</h2>
       </div>
     );
   }
