@@ -1,0 +1,7 @@
+.Hello-complete {
+    text-decoration: line-through;
+    opacity: .3;
+}
+.Hello-non-complete {
+    text-decoration: none;
+}

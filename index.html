@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        // const hello = React.createElement('div', {
+        //     class: 'hello'
+        // }, 'Hello Quang');
+        // const Image = React.createElement('img',{
+        //     src:'https://lh3.googleusercontent.com/rKdny75rSXob5BYfLhquNI6ZeRW5KFyceh3Nkq176BNANUaGMklv1Hbch2LNq1bFQZDjdqHPFC0HPaEm2xZvy6TeFDMWV-sWzg=w1600-rj'
+        // });
+        const Image = <img src='https://lh3.googleusercontent.com/rKdny75rSXob5BYfLhquNI6ZeRW5KFyceh3Nkq176BNANUaGMklv1Hbch2LNq1bFQZDjdqHPFC0HPaEm2xZvy6TeFDMWV-sWzg=w1600-rj'></img>
+        const hello = <div class='hello'>Hello Quang</div>
+        const App = React.createElement('div',null, hello,Image);
+        const root = document.getElementById('root');
+        ReactDOM.render(App, root);
+    </script>
+</body>
+
+</html>
